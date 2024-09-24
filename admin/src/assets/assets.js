@@ -16,4 +16,4 @@ export const assets ={
     nav_profile
 }
 
-export const url = 'http://localhost:4000'
+export const url = 'https://tomato-backend-28nj.onrender.com'
