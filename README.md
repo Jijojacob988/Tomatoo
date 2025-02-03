@@ -26,7 +26,7 @@ This is a **Full Stack MERN (MongoDB, Express, React, Node.js) Food Ordering Web
 
 ### 1. Clone the repository
 ```sh
-git clone https://github.com/yourusername/mern-food-ordering-app.git
+git clone https://github.com/Jijojacob988/mern-food-ordering-app.git
 cd mern-food-ordering-app
 ```
 
