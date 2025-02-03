@@ -1,5 +1,7 @@
 # MERN Food Ordering App
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://tomato-food-delapp-react.web.app/)
+
 ## Overview
 This is a **Full Stack MERN (MongoDB, Express, React, Node.js) Food Ordering Web App** that allows users to browse food items, add them to a cart, proceed to checkout, and place orders. The project includes user authentication, Stripe payments, an admin panel for order management, and a responsive UI.
 
@@ -89,6 +91,7 @@ This project is licensed under the MIT License.
 - Make sure to deploy frontend and backend separately and update API URLs accordingly.
 
 Happy Coding! 
+
 
 
 
