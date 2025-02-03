@@ -1,83 +1,94 @@
-Tomato - Full Stack Food Ordering Web Application
+# MERN Food Ordering App
 
-Project Description
-Tomato is a full-stack food ordering web application developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js). This application provides a seamless experience for users to browse food items, place orders, and make secure payments. The project includes a fully functional admin panel for managing food items and tracking order statuses in real time.
+## Overview
+This is a **Full Stack MERN (MongoDB, Express, React, Node.js) Food Ordering Web App** that allows users to browse food items, add them to a cart, proceed to checkout, and place orders. The project includes user authentication, Stripe payments, an admin panel for order management, and a responsive UI.
 
-Key Features
-Dynamic User Interface: Built with React.js, the application provides a smooth, responsive user interface for browsing food items and placing orders.
+## Features
+- **User Authentication**: Signup/Login using email & password.
+- **Food Browsing & Filtering**: View different categories of food.
+- **Cart Management**: Add/remove items, adjust quantities.
+- **Checkout & Payment**: Integrated with Stripe for secure payments.
+- **Order Tracking**: Users can check the order status.
+- **Admin Panel**: Manage food items and order statuses.
+- **Fully Responsive**: Optimized for all screen sizes.
 
-Responsive Design: Ensures a consistent experience across mobile, tablet, and desktop devices.
+## Tech Stack
+- **Frontend**: React.js, React Router, CSS (custom stylesheets)
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **State Management**: Context API
+- **Authentication**: JWT (JSON Web Tokens)
+- **Payment Integration**: Stripe API
 
-Shopping Cart: Users can add items to the cart and proceed to checkout with ease.
+## Installation & Setup
 
-Category Filtering: Allows users to filter food items by category for efficient browsing.
+### 1. Clone the repository
+```sh
+git clone https://github.com/yourusername/mern-food-ordering-app.git
+cd mern-food-ordering-app
+```
 
-User Authentication: Secure sign-up and login functionalities with form validation for user accounts.
-
-Stripe Payment Integration: Enables users to make secure online payments for their orders.
-
-Admin Panel: Provides functionality for the admin to add, edit, or delete food items and track orders in real-time.
-
-Technology Stack
-MongoDB: Used for storing user and order data, as well as managing food items.
-
-Express.js: Handles the back-end logic and API routes.
-
-Node.js: Provides the server-side environment to run the application.
-
-React.js: Creates the front-end user interface for users and the admin panel.
-
-Stripe: Integrated for secure online payment processing.
-
-Installation
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/Jijojacob988/Tomatoo.git
-Navigate to the project folder:
-
-bash
-Copy code
-cd Tomatoo
-Install dependencies for both the backend and frontend:
-
-bash
-Copy code
-# For backend
-cd backend
-npm install
-
-# For frontend
+### 2. Install Dependencies
+#### Frontend:
+```sh
 cd frontend
 npm install
-Set up environment variables:
-
-Create a .env file in the backend directory and add the following:
-env
-Copy code
-MONGODB_URI=your-mongodb-uri
-STRIPE_SECRET_KEY=your-stripe-secret-key
-PORT=your-server-port
-Start the development server:
-
-bash
-Copy code
-# For backend
+```
+#### Backend:
+```sh
 cd backend
-npm run dev
+npm install
+```
 
-# For frontend
-cd frontend
+### 3. Environment Variables
+Create a `.env` file in the backend folder and add:
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
+
+### 4. Run the Application
+#### Start Backend:
+```sh
+cd backend
 npm start
-Open the app in your browser at http://localhost:3000.
+```
+#### Start Frontend:
+```sh
+cd frontend
+npm run dev
+```
 
-Admin Panel
-The admin panel allows for managing the food items (add, edit, delete) and viewing real-time order updates. The admin functionalities can be accessed through specific routes within the application.
+## Usage
+- Visit **http://localhost:3000/** for the frontend.
+- Signup/Login to explore food items.
+- Add items to the cart and proceed to checkout.
+- Admin can login via **/admin** to manage orders.
 
-Contributing
-Feel free to submit issues or pull requests to help improve the application.
+## Admin Panel Features
+- **Add/Remove Food Items**
+- **Change Order Status** (Processing, Out for Delivery, Delivered)
 
-License
+## Deployment
+- **Frontend**: Deploy on **Vercel/Netlify**
+- **Backend**: Deploy on **Render/Heroku**
+- **Database**: MongoDB Atlas
+
+## Live Demo
+[Click Here](https://tomato-food-delapp-react.web.app/)
+
+## License
 This project is licensed under the MIT License.
+
+---
+
+### Notes
+- Ensure MongoDB and Stripe API keys are correctly configured.
+- Admin panel access is restricted; update the admin credentials in the backend.
+- Make sure to deploy frontend and backend separately and update API URLs accordingly.
+
+Happy Coding! 
+
+
 
